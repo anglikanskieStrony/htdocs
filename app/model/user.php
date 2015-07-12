@@ -6,7 +6,7 @@ class User
 	private $login;
 	private $password;
 	private $isAdmin;
-	public function __construct($id,$login,$password = "admin1", $isAdmin = true, $hashPass = true)
+	public function __construct($id,$login,$password, $isAdmin = true, $hashPass = true)
 	{
 		$this->id = $id;
 		$this->login = $login;

@@ -10,12 +10,14 @@ class AdminController extends BaseController
 		if($this->model->checkIfThereIsUser())
 		{
 			//$this->model->logOut();
-			if(!$this->model->authorise()) 
+			if($this->model->authorise())
 			{
-					header("Location: /admin");
+				parent::__construct($page);
 			}
-			echo($page);
-			parent::__construct($page);
+			else{
+				echo("banch");
+				exit;
+			}
 		}
 		else
 		{

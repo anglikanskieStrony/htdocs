@@ -18,15 +18,16 @@ class AdminModel extends BaseModel
 			echo("zalogowano");
 			return true;
 		}
+		
 		else if(isset($_GET['login']) && isset($_GET['password']))
 		{
-			echo("logowanie");
 			if(!$this->sessionManager->logIn($_GET['login'], $_GET['password']))
 			{
-				echo("logowanie nie powiod³o siê");
 				$this->display("login-failed-admin");
+				echo("logowanie nie powiod³o siê");
 				return false;
 			}
+			return true;
 		} 
 		else
 		{	
@@ -34,6 +35,7 @@ class AdminModel extends BaseModel
 			$this->display("login-admin");
 			exit;
 		}
+
 		return false;
 	}
 	public function logOut()

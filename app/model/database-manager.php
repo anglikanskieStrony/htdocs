@@ -56,8 +56,12 @@ class databaseManager{
 	
 	//	echo($query);
 		}
+		if($result->num_rows == 1)
+		{
 		$row = $result->fetch_assoc();
 		return new User($row['id'],$row['login'],$row['password'],true,false);
+		}
+		return null;
 		
 	}
 	

@@ -19,6 +19,7 @@ class SessionManager
 				$_SESSION['user'] = serialize($user);
 				return true;
 			}
+			
 		}
 		return false;
 	}
