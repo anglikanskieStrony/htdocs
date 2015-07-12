@@ -7,23 +7,19 @@ class MainModel extends BaseModel
 {
 	public function loadIndex()
 	{
-		$this->pageData = new Article();
+		$this->pageData = $this->databaseManager->getSpecialById(1);
 	}
 	public function loadMenuCategories()
-	{
-		$this->pageData = array();
-		for($i=0; $i<20; $i++ )
-		{
-			$this->pageData[$i] = new Article();
-		}
+	{	
+		$this->pageData = $this->databaseManager->getCategoryList();
 	}
 	public function loadMenuCategory()
 	{
-		$this->pageData = new Article();
+		$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
 	}
 	public function loadContact()
 	{
-		$this->pageData = new Article();
+		$this->pageData = $this->databaseManager->getSpecialById(2);
 	}
 	public function loadGallery()
 	{

@@ -1,5 +1,6 @@
 <?php 
 include($_SERVER['DOCUMENT_ROOT']."/app/controllers/base-controller.php");
+include_once($_SERVER['DOCUMENT_ROOT']."/app/model/main-model.php");
 class MainController extends BaseController
 {
 	public function __construct($page = "index")
@@ -31,9 +32,9 @@ class MainController extends BaseController
 		}
 		parent::display($page);
 	}
-	public function save(){}
-	public function addd(){}
-	public function delete(){}
+	public function save($page){}
+	public function add($page){}
+	public function delete($page){}
 }
 $controller = new MainController($page);
 ?>

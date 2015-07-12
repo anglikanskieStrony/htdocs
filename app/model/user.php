@@ -6,12 +6,15 @@ class User
 	private $login;
 	private $password;
 	private $isAdmin;
-	public function __construct($id,$login,$password = null, $isAdmin = false)
+	public function __construct($id,$login,$password = "admin1", $isAdmin = true, $hashPass = true)
 	{
 		$this->id = $id;
 		$this->login = $login;
 		$this->isAdmin = $isAdmin;
-		$this->password = sha1($password,true);
+	//	if($hashPass)
+	//		$this->password = sha1($password,true);
+	//	else 
+			$this->password = $password;
 	}
 	public function getId()
 	{
@@ -27,7 +30,7 @@ class User
 	}
 	public function setLogin($login)
 	{
-		$this->lgin = $login;
+		$this->login = $login;
 	}
 	public function getIsAdmin()
 	{
@@ -39,11 +42,11 @@ class User
 	}
 	public function getPassword()
 	{
-		return $this->isAdmin;
+		return $this->password;
 	}
 	public function setPassword($password)
 	{
-		$this->isAdmin = sha1($password,true);
+		$this->password = sha1($password,true);
 	}
 	
 }

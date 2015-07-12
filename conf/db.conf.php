@@ -2,8 +2,8 @@
 
 $databaseConfig = array();
 $databaseConfig["server"] = "localhost";
-$databaseConfig["login"] = "admin";
+$databaseConfig["login"] = "root";
 $databaseConfig["password"] = "";
-$databaseConfig["database"] = "quoc";
+$databaseConfig["databaseName"] = "quoc";
 
 ?>

@@ -1,6 +1,5 @@
 <?php
 
-include($_SERVER['DOCUMENT_ROOT']."/app/model/main-model.php");
 
 abstract class BaseController
 {
@@ -20,23 +19,29 @@ abstract class BaseController
 				$this->display($page);
 				break;
 			case "save":
-				$this->save();
+				$this->save($page);
 				break;
 			case "add":
-				$this->add();
+				$this->add($page);
 				break;
 			case "delete":
-				$this->delete();
+				$this->delete($page);
 				break;
+			case "logout":
+				$this->logOut();
 		}
 	}
 	public function display($page)
 	{
 		$this->model->display($page);
 	}
-	public abstract  function save();
-	public abstract function addd();
-	public abstract function delete();
+	public function logOut()
+	{
+		$this->model->logOut();
+	}
+	public abstract  function save($page);
+	public abstract function add($page);
+	public abstract function delete($page);
 }
 
 ?>
