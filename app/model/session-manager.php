@@ -32,6 +32,8 @@ class SessionManager
 		session_destroy();
 		header("Location: /");
 	}
+	
+	
 	public function authorise()
 	{
 		if(isset($_SESSION['user']))

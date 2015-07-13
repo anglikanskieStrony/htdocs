@@ -43,6 +43,16 @@ class AdminModel extends BaseModel
 		$this->sessionManager->logOut();
 	}
 	
+	public function logOut()
+	{
+		$this->sessionManager->logOut();
+	}
+	
+	#public function update()
+	#{
+	#	$this->saveContact();		
+	#}
+	
 	//--------------LOAD
 	public function loadIndex()
 	{
@@ -68,6 +78,9 @@ class AdminModel extends BaseModel
 	{
 		
 	}
+
+
+	
 	//--------------ADD
 	public function addMenuCategory()
 	{
@@ -89,10 +102,17 @@ class AdminModel extends BaseModel
 	{
 		$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
 	}
+	
 	public function saveContact()
 	{
 		$this->pageData = $this->databaseManager->getSpecialById(2);
 	}
+	
+	#public function saveContact()
+	#{
+	#	$this->pageData = $this->databaseManager->updateSpecial(2);
+	#}
+	
 	//--------------DELETE
 	public function deleteMenuCategory()
 	{

@@ -46,6 +46,7 @@ class AdminController extends BaseController
 			case "uzytkownik-admin":
 				$this->model->loadUser();
 				break;
+			
 			default:
 				$this->model->loadIndex();
 		}
