@@ -11,9 +11,9 @@ class User
 		$this->id = $id;
 		$this->login = $login;
 		$this->isAdmin = $isAdmin;
-	//	if($hashPass)
-	//		$this->password = sha1($password,true);
-	//	else 
+		if($hashPass)
+		$this->password = sha1($password);
+		else 
 			$this->password = $password;
 	}
 	public function getId()
@@ -46,7 +46,7 @@ class User
 	}
 	public function setPassword($password)
 	{
-		$this->password = sha1($password,true);
+		$this->password = sha1($password);
 	}
 	
 }

@@ -14,7 +14,7 @@ class SessionManager
 		$user = $this->databaseManager->getUserByLogin($login);
 		if($user)
 		{
-			if($user->getPassword() == $password && $password !=null)
+			if($user->getPassword() == sha1($password) && $password !=null)
 			{
 				$_SESSION['user'] = serialize($user);
 				return true;

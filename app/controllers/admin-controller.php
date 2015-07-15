@@ -15,7 +15,6 @@ class AdminController extends BaseController
 				parent::__construct($page);
 			}
 			else{
-				echo("banch");
 				exit;
 			}
 		}
@@ -54,24 +53,24 @@ class AdminController extends BaseController
 	}
 	public function save($page)
 	{
-			switch($page)
+		switch($page)
 		{
-			case "index":
-				$this->model->saveIndex();
+			case "start-admin":
+				$this->model->saveIndex(new Article(1,"kontakt",$_POST["content"]));
 				break;
-			case "menu":
+			case "menu-admin":
 				$this->model->saveMenuCategories();
 				break;
-			case "kategoria":
+			case "kategoria-admin":
 				$this->model->saveMenuCategory();
 				break;
-			case "kontakt":
-				$this->model->saveContact();
+			case "kontakt-admin":
+				$this->model->saveContact(new Article(2,"kontakt",$_POST["content"]));
 				break;
-			case "galeria":
+			case "galeria-admin":
 				$this->model->saveGallery();
 				break;
-			case "user":
+			case "uzytkownik-admin":
 				$this->model->saveUser();
 				break;
 			default:
@@ -84,10 +83,10 @@ class AdminController extends BaseController
 	{
 		switch($page)
 		{
-			case "kategoria":
+			case "kategoria-admin":
 				$this->model->addMenuCategory();
 				break;
-			case "galeria":
+			case "galeria-admin":
 				$this->model->addGallery();
 				break;
 			case "uzytkownik-admin":
@@ -103,13 +102,13 @@ class AdminController extends BaseController
 	{
 		switch($page)
 		{
-			case "kategoria":
+			case "kategoria-admin":
 				$this->model->deleteMenuCategory();
 				break;
-			case "galeria":
+			case "galeria-admin":
 				$this->model->deleteGallery();
 				break;
-			case "user":
+			case "user-admin":
 				$this->model->deleteUser();
 				break;
 			default:

@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//app/views/header-admin-view.php=UTF-8
+encoding//app/views/kontakt-admin-view.php=UTF-8
 encoding//app/views/login-admin-view.php=UTF-8
 encoding//app/views/login-failed-admin-view.php=UTF-8
 encoding//app/views/uzytkownik-admin-view.php=UTF-8

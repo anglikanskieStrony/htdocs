@@ -41,7 +41,7 @@ class databaseManager{
 		if(!$result = $this->databaseConnection->query($query)){
 			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
 			$row = $result->fetch_assoc();
-			return new User($row['id'],$row['login'],$row['password'],true);
+			return new User($row['id'],$row['login'],$row['password'],true,false);
 		}
 	}
 
@@ -149,10 +149,12 @@ class databaseManager{
 	}
 	
 	public function updateSpecial($special){
-		$query = "update specials set login=$special->getName(), password=$special->getContent() ";
+		$query = "update special set name='".$special->getName()."', content='".$special->getContent()."' where id=".$special->getId();
 		if(!$result = $this->databaseConnection->query($query)){
-			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
-				}
+			die('<script type="application/javascript"> alert("Zapis nie powiód³ siê [' . $this->databaseConnection->error . ']");</script>');
+				
+		}
+				return true;
 	}
 	
 	public function updateCategory($category){

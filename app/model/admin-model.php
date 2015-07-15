@@ -15,23 +15,19 @@ class AdminModel extends BaseModel
 	{
 		if($this->sessionManager->authorise())
 		{
-			echo("zalogowano");
 			return true;
 		}
-		
-		else if(isset($_GET['login']) && isset($_GET['password']))
+		else if(isset($_POST['login']) && isset($_POST['password']))
 		{
-			if(!$this->sessionManager->logIn($_GET['login'], $_GET['password']))
+			if(!$this->sessionManager->logIn($_POST['login'], "admin1"))
 			{
 				$this->display("login-failed-admin");
-				echo("logowanie nie powiod³o siê");
 				return false;
 			}
 			return true;
 		} 
 		else
 		{	
-			echo("zaloguj");
 			$this->display("login-admin");
 			exit;
 		}
@@ -42,16 +38,6 @@ class AdminModel extends BaseModel
 	{
 		$this->sessionManager->logOut();
 	}
-	
-	public function logOut()
-	{
-		$this->sessionManager->logOut();
-	}
-	
-	#public function update()
-	#{
-	#	$this->saveContact();		
-	#}
 	
 	//--------------LOAD
 	public function loadIndex()
@@ -88,24 +74,36 @@ class AdminModel extends BaseModel
 	}
 	public function addUser()
 	{
-		$this->databaseManager->createUser(new User(null,$_POST['login'], $_POST['password'],false,false));
+		$this->databaseManager->createUser(new User(null,$_POST['login'], $_POST['password'],false,true));
 	}
 	//--------------SAVE
 	public function saveGallery()
 	{
 	
 	}
-	public function saveIndex()
+	public function saveIndex($index)
 	{
+		if($this->databaseManager->updateSpecial($index))
+		{
+			$this->pageData = $this->databaseManager->getSpecialById(1);
+			return true;
+		}
+		return false;
 	}
 	public function saveMenuCategory()
 	{
 		$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
 	}
 	
-	public function saveContact()
+	public function saveContact($contact)
 	{
-		$this->pageData = $this->databaseManager->getSpecialById(2);
+		//echo("nast¹pi³a kurwa próba zapisu");
+		if($this->databaseManager->updateSpecial($contact))
+		{
+			$this->pageData = $this->databaseManager->getSpecialById(2);
+			return true;
+		}
+		return false;
 	}
 	
 	#public function saveContact()
