@@ -5,7 +5,7 @@ class Article
 	private $id;
 	private $name;
 	private $content;
-	public function __construct($id="default id",$name="default name", $content = "defaultContent")
+	public function __construct($id="",$name="", $content = "")
 	{
 		$this->id = $id;
 		$this->name = $name;

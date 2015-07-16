@@ -50,7 +50,10 @@ class AdminModel extends BaseModel
 	}
 	public function loadMenuCategory()
 	{
-		$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
+		if(isset($_GET["categoryid"]))
+			$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
+		else
+			$this->pageData = new Article();
 	}
 	public function loadContact()
 	{
@@ -70,7 +73,12 @@ class AdminModel extends BaseModel
 	//--------------ADD
 	public function addMenuCategory()
 	{
-		$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
+		if($this->databaseManager->createCategory($category))
+		{
+			header("Location: /admin/menu");
+			return true;
+		}
+		return false;
 	}
 	public function addUser()
 	{
@@ -90,9 +98,22 @@ class AdminModel extends BaseModel
 		}
 		return false;
 	}
-	public function saveMenuCategory()
+	public function saveMenuCategory($category)
 	{
-		$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
+		if($_GET["categoryid"]!="")
+		{
+			if($this->databaseManager->updateCategory($category))
+			{
+				$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
+				return true;
+			}
+			return false;
+		}
+		else 
+		{
+			$this->databaseManager->createCategory($category);
+			header("Location: /admin/menu");
+		}
 	}
 	
 	public function saveContact($contact)
@@ -112,9 +133,10 @@ class AdminModel extends BaseModel
 	#}
 	
 	//--------------DELETE
-	public function deleteMenuCategory()
+	public function deleteMenuCategory($id)
 	{
-		$this->pageData = $this->databaseManager->getCategoryById($_GET["categoryid"]);
+		$this->pageData = $this->databaseManager->deleteCategory($id);
+		header("Location: /admin/menu");
 	}
 	public function deleteUser()
 	{

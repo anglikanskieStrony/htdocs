@@ -3,11 +3,11 @@
 		<?php
 		foreach($this->getPageData() as $category)
 		{
-			echo("<button type=\"button\" class=\"btn\" onClick=\"location.href='/menu/kategoria?categoryid=".$category->getId()."'\">".$category->getName() ."</button>");
+			echo("<button type=\"button\" class=\"btn\" onClick=\"location.href='/admin/menu/kategoria?categoryid=".$category->getId()."'\">".$category->getName() ."</button>");
 		}
 		
 		?>
-		
+		<button type="button" class="btn" onClick="location.href='/admin/menu/kategoria'">+</button>
 		
 		
 		

@@ -129,7 +129,7 @@ class databaseManager{
 	}
 	
 	public function createCategory($category){
-		$query = "insert into categories values($category->getName(), $category->getContent()) ";
+		$query = "insert into categories (name, content) values('".$category->getName()."', '".$category->getContent()."') ";
 		if(!$result = $this->databaseConnection->query($query)){
 			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
 				}
@@ -158,10 +158,12 @@ class databaseManager{
 	}
 	
 	public function updateCategory($category){
-		$query = "update specials set login=$category->getName(), password=$category->getContent() ";
+		$query = "update categories set name='".$category->getName()."', content='".$category->getContent()."' where id=".$category->getId();
 		if(!$result = $this->databaseConnection->query($query)){
-			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
-				}
+			die('<script type="application/javascript"> alert("Zapis nie powiód³ siê [' . $this->databaseConnection->error . ']");</script>');
+				
+		}
+				return true;
 	}
 	
 	public function updatePicture($picture){
@@ -187,8 +189,9 @@ class databaseManager{
 	
 	public function deleteCategory($id){
 		$query = "delete from categories where id=$id";
+		echo $query;
 		if(!$result = $this->databaseConnection->query($query)){
-			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
+			die('<script type="application/javascript"> alert("Nie uda³o usun¹æ kategorii[' . $this->databaseConnection->error . ']");</script>');
 				}
 	}
 	

@@ -62,7 +62,7 @@ class AdminController extends BaseController
 				$this->model->saveMenuCategories();
 				break;
 			case "kategoria-admin":
-				$this->model->saveMenuCategory();
+				$this->model->saveMenuCategory(new Article($_GET["categoryid"],$_POST["name"],$_POST["content"]));
 				break;
 			case "kontakt-admin":
 				$this->model->saveContact(new Article(2,"kontakt",$_POST["content"]));
@@ -83,9 +83,7 @@ class AdminController extends BaseController
 	{
 		switch($page)
 		{
-			case "kategoria-admin":
-				$this->model->addMenuCategory();
-				break;
+
 			case "galeria-admin":
 				$this->model->addGallery();
 				break;
@@ -103,7 +101,7 @@ class AdminController extends BaseController
 		switch($page)
 		{
 			case "kategoria-admin":
-				$this->model->deleteMenuCategory();
+				$this->model->deleteMenuCategory($_GET["categoryid"]);
 				break;
 			case "galeria-admin":
 				$this->model->deleteGallery();
