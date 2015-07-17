@@ -13,8 +13,8 @@
         tinymce.init({
         	 selector: "textarea#elm1",
         	 theme: "modern",
-        	    width: 980,
-        	    height: 345,
+        	 width: '100%',
+        	 height: '50%',
         	    plugins: [
         	         "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
         	         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
