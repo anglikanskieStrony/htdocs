@@ -87,16 +87,11 @@ ul a:hover {
     }
 	  
 #right-center{
-	  	float:right;
-		width:60%;
+	  	float:left;
+		width:63%;
 		height:100%;
 	}
   
-#right{
-	  	float:right;
-		width:5%;
-		height:100%;
-	}
 	
 #content{
 		width:90%;

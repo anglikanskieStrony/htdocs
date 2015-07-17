@@ -17,7 +17,7 @@
 <div id="main">
 
 	  <div id="left" >
-				<a href="https://www.facebook.com/pages/Bar-Orientalny-TRE-XANH/609219625804288?fref=ts"><img src="/static/images/facebook1.png" width="20%"/></a>
+				<a href="https://www.facebook.com/pages/Bar-Orientalny-TRE-XANH/609219625804288?fref=ts"><img src="/static/images/facebook1.png" width="40%"/></a>
 	  </div>
 	  
       <div id="left-center">
@@ -36,9 +36,6 @@
 
 	
 	  
-	  <div id="right">
-			<img src="/static/images/gb.png" width="35%" style="margin:2px;opacity:0.8"/>
-			<img src="/static/images/pl.png" width="35%" style="margin:2px;opacity:0.8"/>
-	  </div>
+
 	  
 	  	 <div id="right-center">
