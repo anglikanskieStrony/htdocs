@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Tre Xanh</title>
 	
-        <link rel="icon" href="/static/icon.png" type="image/png" />
+        <link rel="icon" href="/static/images/icon.png" type="image/png" />
 		<link href='http://fonts.googleapis.com/css?family=Shojumaru&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/static/styles/style1.css">
 		<script type="text/javascript" src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
