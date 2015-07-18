@@ -29,8 +29,8 @@
         	   style_formats: [
         	        {title: 'Tytuł', block: 'h1', styles: {color: '#FFFF00','font-family': 'Shojumaru','font-size':'2vmax','line-height':'0.5vmax', 'text-shadow': '2px 2px #500000'}},
         	        {title: 'Podtytuł', inline: 'span', styles: {color: '#ff0000','font-family': 'Shojumaru','font-size':'1.5vmax','line-height':'0.5vmax', 'text-shadow': '2px 2px #500000'}},
-        	        {title: 'Treść', inline: 'span', classes: 'example1', styles: {'font-family': 'Shojumaru','text-shadow': '0px 0px #ff0000','font-size':'0.9vmax'}},
-        	        {title: 'Tłumaczenie', inline: 'span', styles: {color: 'green','font-family': 'Shojumaru','text-shadow': '0px 0px #500000','font-size':'0.7vmax'}},
+        	        {title: 'Treść', inline: 'span', classes: 'example1', styles: {color:'#FFFF00','font-family': 'Shojumaru','text-shadow': '1px 1px #000000','font-size':'1.2vmax'}},
+        	        {title: 'Tłumaczenie', inline: 'span', styles: {color: '#ffffff','font-family': 'Shojumaru','text-shadow': '1px 1px #000000','font-size':'0.7vmax'}},
         	        {title: 'Table styles'},
         	    ]
             	  
@@ -61,10 +61,8 @@
 					<li><a href="/admin/galeria">Edytuj galerię</a></li>
 				</ul>
 	  </div>
-	
-
-
-	
-
-	  
 	  	 <div id="right-center">
+	  	 <!--<div id="content-top"></div>-->
+	  	 	<div id="logout">
+				<button type="button" class="btn" style="width:100%; background: url(/static/images/frame.png);background-size: 100% 100%;background-repeat: no-repeat;" onClick="location.href='/admin?action=logout'">Wyloguj</button>
+			</div>

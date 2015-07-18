@@ -35,11 +35,5 @@
 					<li><a href="/galeria">Galeria</a></li>
 				</ul>
 	  </div>
-	
-
-
-	
-	  
-
-	  
 	  	 <div id="right-center">
+	  	 	<!--  <div id="content-top">&nbsp;</div>-->
