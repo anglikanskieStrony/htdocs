@@ -2,7 +2,17 @@ html {
 		width:100%;
 		height: 100%; 
 	}
-	
+.gallery-picture
+	{
+	max-width: 250px;
+	max-height: 250px;
+	float:left;
+	margin: 3px;
+	}
+.gallery-picture.admin:hover
+	{
+	opacity: 0.2;
+	}
 body{
 		width:100%;
 		height:100%;

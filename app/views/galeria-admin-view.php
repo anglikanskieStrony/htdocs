@@ -1,11 +1,21 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/app/views/header-admin-view.php"); ?>
-		<div id="content">
+	<script type="application/ecmascript">
+	function areUSure(id)
+	{
+		if(confirm("Czy na pewno chcesz usun¹c zdjêcie?"))
+		{
+			location.href='/admin/galeria/index.php?id='+id+'&action=delete';
+		}
+	}
+	</script>
+
+	<div id="content">
 
 			<?php foreach($this->getPageData() as $picture)
 			{
-				echo('<span style="width: 200px; height: 200px; display: inline-block; border: 3px solid red;"><a href="/static/gallery_images/'.$picture->getAddress().'" ><img src="/static/gallery_images/'.$picture->getAddress().'" style="max-width: 100%; max-height: 100%;"></a><span>');
+				echo('<div><a onclick="areUSure('. $picture->getId().')"><img src="/static/gallery_images/'.$picture->getAddress().'" class="gallery-picture admin" title="Usuñ zdjêcie"></a></div>');
 			} ?>
-			<div style="background-color: #b40000;">
+			<div style="background-color: #b40000; clear:both;">
 
 			<form method="post" enctype="multipart/form-data" action="/admin/galeria/index.php?action=add">
 				<h2>Dodaj nowe zdjêcie</h2>

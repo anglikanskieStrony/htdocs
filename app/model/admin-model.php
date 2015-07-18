@@ -3,6 +3,7 @@
 include_once($_SERVER['DOCUMENT_ROOT']."/app/model/base-model.php");
 include_once($_SERVER['DOCUMENT_ROOT']."/app/model/user.php");
 include_once($_SERVER['DOCUMENT_ROOT']."/app/model/article.php");
+include_once($_SERVER['DOCUMENT_ROOT']."/app/model/picture.php");
 class AdminModel extends BaseModel
 {
 	public function checkIfThereIsUser()
@@ -83,7 +84,7 @@ class AdminModel extends BaseModel
 		if (@move_uploaded_file($_FILES['filename']['tmp_name'], $_SERVER["DOCUMENT_ROOT"]."/static/gallery_images/" . basename($_FILES['filename']['name'])))
 		{
 			$this->databaseManager->createPicture($_FILES['filename']['name']);
-			return true;
+			header("Location: /admin/galeria");
 		}
 		else return false;
 	}
@@ -140,7 +141,13 @@ class AdminModel extends BaseModel
 	{
 		$this->pageData = $this->databaseManager->getSpecialById(2);
 	}
-
+	public function deletePicture()
+	{
+		$filename = $this->databaseManager->getPictureById($_GET['id'])->getAddress();
+		$this->databaseManager->deletePicture($_GET['id']);
+		unlink($_SERVER["DOCUMENT_ROOT"]."/static/gallery_images/".$filename);
+		header("Location: /admin/galeria");
+	}
 	
 }
 

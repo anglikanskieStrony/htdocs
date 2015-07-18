@@ -116,10 +116,14 @@ class databaseManager{
 	}
 	
 	public function getPictureById($id){
-		$query = "select * from pictures where id = '$id'";
+		$query = "select * from pictures where id = $id";
 		if(!$result = $this->databaseConnection->query($query)){
 			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
 				}
+		if($row = $result->fetch_assoc())
+			return new Picture($row['id'],$row['address']);
+		else return
+			new Picture();
 	}
 	public function createUser($user){
 		$query = "insert into users (login, password) values('".$user->getLogin()."','".$user->getPassword()."') ";

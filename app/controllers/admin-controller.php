@@ -104,7 +104,7 @@ class AdminController extends BaseController
 				$this->model->deleteMenuCategory($_GET["categoryid"]);
 				break;
 			case "galeria-admin":
-				$this->model->deleteGallery();
+				$this->model->deletePicture();
 				break;
 			case "user-admin":
 				$this->model->deleteUser();
