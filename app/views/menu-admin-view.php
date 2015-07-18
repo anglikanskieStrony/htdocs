@@ -7,7 +7,7 @@
 		}
 		
 		?>
-		<button type="button" class="btn" onClick="location.href='/admin/menu/kategoria'">+</button>
+		<button type="button" class="btn" onClick="location.href='/admin/menu/kategoria'">Dodaj</button>
 		
 		
 		

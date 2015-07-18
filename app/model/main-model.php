@@ -23,7 +23,7 @@ class MainModel extends BaseModel
 	}
 	public function loadGallery()
 	{
-		
+		$this->pageData = $this->databaseManager->getPictureList();
 	}
 }
 

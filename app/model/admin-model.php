@@ -61,7 +61,7 @@ class AdminModel extends BaseModel
 	}
 	public function loadGallery()
 	{
-		
+		$this->pageData = $this->databaseManager->getPictureList();
 	}
 	public function loadUser()
 	{
@@ -71,23 +71,21 @@ class AdminModel extends BaseModel
 
 	
 	//--------------ADD
-	public function addMenuCategory()
-	{
-		if($this->databaseManager->createCategory($category))
-		{
-			header("Location: /admin/menu");
-			return true;
-		}
-		return false;
-	}
 	public function addUser()
 	{
 		$this->databaseManager->createUser(new User(null,$_POST['login'], $_POST['password'],false,true));
 	}
 	//--------------SAVE
-	public function saveGallery()
+	public function addPicture()
 	{
-	
+		$this->pageData = $this->databaseManager->getPictureList();
+		@set_time_limit(172800);
+		if (@move_uploaded_file($_FILES['filename']['tmp_name'], $_SERVER["DOCUMENT_ROOT"]."/static/gallery_images/" . basename($_FILES['filename']['name'])))
+		{
+			$this->databaseManager->createPicture($_FILES['filename']['name']);
+			return true;
+		}
+		else return false;
 	}
 	public function saveIndex($index)
 	{
@@ -118,7 +116,7 @@ class AdminModel extends BaseModel
 	
 	public function saveContact($contact)
 	{
-		//echo("nast¹pi³a kurwa próba zapisu");
+		//echo("nastï¿½piï¿½a kurwa prï¿½ba zapisu");
 		if($this->databaseManager->updateSpecial($contact))
 		{
 			$this->pageData = $this->databaseManager->getSpecialById(2);

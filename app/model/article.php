@@ -17,7 +17,7 @@ class Article
 	}
 	public function setId($id)
 	{
-		$this->name = $id;
+		$this->id = $id;
 	}
 	public function getName()
 	{

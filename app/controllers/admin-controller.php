@@ -85,7 +85,7 @@ class AdminController extends BaseController
 		{
 
 			case "galeria-admin":
-				$this->model->addGallery();
+				$this->model->addPicture();
 				break;
 			case "uzytkownik-admin":
 				$this->model->addUser();

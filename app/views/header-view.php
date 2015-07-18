@@ -8,6 +8,10 @@
         <link rel="icon" href="/static/images/icon.png" type="image/png" />
 		<link href='http://fonts.googleapis.com/css?family=Shojumaru&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/static/styles/style1.css">
+	  <link rel="stylesheet" href="/static/styles/all.min.css">
+	  <script type="application/javascript" src="/static/scripts/jquery/jquery-1.11.3.min.js"></script>
+	  	<script type="application/javascript" src="/static/scripts/magnificpopup/core.js"></script>
+	  <script type="application/javascript" src="/static/scripts/gallery.js"></script>
   </head>
  
  

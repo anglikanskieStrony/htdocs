@@ -1,6 +1,7 @@
 <?php
 include_once($_SERVER['DOCUMENT_ROOT']."/app/model/article.php");
 include_once($_SERVER['DOCUMENT_ROOT']."/app/model/user.php");
+include_once($_SERVER['DOCUMENT_ROOT']."/app/model/picture.php");
 include_once($_SERVER['DOCUMENT_ROOT']."/conf/db.conf.php");
 
 class databaseManager{
@@ -106,6 +107,12 @@ class databaseManager{
 		if(!$result = $this->databaseConnection->query($query)){
 			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
 				}
+		$pictures = array();
+		while($row = $result->fetch_assoc())
+		{
+			$pictures[] = new Picture($row['id'],$row['address']);
+		}
+		return $pictures;
 	}
 	
 	public function getPictureById($id){
@@ -120,13 +127,7 @@ class databaseManager{
 			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
 				}
 	}
-	
-	public function createSpecial($special){
-		$query = "insert into specials values(".$special->getName().", ".$special->getContent().") ";
-		if(!$result = $this->databaseConnection->query($query)){
-			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
-				}
-	}
+
 	
 	public function createCategory($category){
 		$query = "insert into categories (name, content) values('".$category->getName()."', '".$category->getContent()."') ";
@@ -135,10 +136,10 @@ class databaseManager{
 				}
 	}
 	
-	public function createPicture($picture){
-		$query = "insert into pictures values($category->getAddress()) ";
+	public function createPicture($fileName){
+		$query = "insert into pictures (address) values('$fileName') ";
 		if(!$result = $this->databaseConnection->query($query)){
-			die('<script type="application/javascript"> alert("Nie uda³o siê wykonaæ zapytania [' . $this->databaseConnection->error . ']");</script>');
+			die('<script type="application/javascript"> alert("Nie uda³o siê zapisaæ obrazka [' . $this->databaseConnection->error . ']");</script>');
 				}
 	}
 	public function updateUser($user){
