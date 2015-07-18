@@ -27,13 +27,11 @@
         	   content_css: "css/content.css",
         	   toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons", 
         	   style_formats: [
-        	        {title: 'Bold text', inline: 'b'},
-        	        {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
-        	        {title: 'Red header', block: 'h1', styles: {color: '#ff0000'}},
-        	        {title: 'Example 1', inline: 'span', classes: 'example1'},
-        	        {title: 'Example 2', inline: 'span', classes: 'example2'},
+        	        {title: 'Tytuł', block: 'h1', styles: {color: '#FFFF00','font-family': 'Shojumaru','font-size':'2vmax','line-height':'0.5vmax', 'text-shadow': '2px 2px #500000'}},
+        	        {title: 'Podtytuł', inline: 'span', styles: {color: '#ff0000','font-family': 'Shojumaru','font-size':'1.5vmax','line-height':'0.5vmax', 'text-shadow': '2px 2px #500000'}},
+        	        {title: 'Treść', inline: 'span', classes: 'example1', styles: {'font-family': 'Shojumaru','text-shadow': '0px 0px #ff0000','font-size':'0.9vmax'}},
+        	        {title: 'Tłumaczenie', inline: 'span', styles: {color: 'green','font-family': 'Shojumaru','text-shadow': '0px 0px #500000','font-size':'0.7vmax'}},
         	        {title: 'Table styles'},
-        	        {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
         	    ]
             	  
             	 }); 
