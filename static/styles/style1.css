@@ -90,7 +90,7 @@ ul a:hover {
 		-moz-border-radius:30px;
 		border-radius:30px;
 		font-family:Helvetica,Arial;
-		font-size:16px;
+		font-size:1.6vmax;
 		transition:all .5s;
 	}
 
@@ -159,7 +159,7 @@ ul a:hover {
 		min-height: 73%;
 		padding: 0;
 		margin-top: 20%;
-		margin-bottom: 10%;
+		margin-bottom: 7%;
 		margin-right:6%;
 		background: rgb(144,0,0);
 		background: rgba(144, 0, 0, 0.8);
@@ -199,23 +199,20 @@ ul a:hover {
 
 .btn {
 		float:left;
-		 -webkit-border-radius: 28;
-		 -moz-border-radius: 28;
-		border-radius: 45%;
 		border:none;
 		text-shadow: 4px 2px 3px black;
 		font-family: 'Shojumaru', sans-serif;
-		font-size: 130%;
+		font-size: 1.5vmax;
 		color: #FFFF00;
-		padding: 9px 20px 10px 20px;
+		padding: 1vmax 2vmax 1vmax 2vmax;
 		text-decoration: none;
 		width:33%;
-		height:2.5cm;
+		height:6.7vmax;
 		background-color: Transparent;
 	}
 
 .btn:hover {
-		background: #B80000;
+		color: #FF0000;
 		opacity:0.8;
 		text-decoration: none;
 	}
@@ -232,9 +229,9 @@ ul a:hover {
 		border:none;
 		text-shadow: 4px 2px 3px black;
 		font-family: 'Shojumaru', sans-serif;
-		font-size: 130%;
+		font-size: 1.7vmax;
 		color: #FFFF00;
-		padding: 9px 20px 10px 20px;
+		padding: 1vmax 2vmax 1vmax 2vmax;
 		text-decoration: none;
 		width:17%;
 		height:2.5cm;
@@ -244,10 +241,36 @@ ul a:hover {
 	}
 
 .btn_admin:hover {
-		background: #B80000;
+		background: #000000;
 		opacity:0.8;
 		text-decoration: none;
 	}
+	
+	::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-button {
+    width: 8px;
+    height:5px;
+}
+
+::-webkit-scrollbar-track {
+    background:#0000;
+    border: thin solid #ffffff;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:##680000 ;
+    border: thin solid #eee;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#fff000;
+}           
+
 
 
 
