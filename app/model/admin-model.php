@@ -117,7 +117,7 @@ class AdminModel extends BaseModel
 	
 	public function saveContact($contact)
 	{
-		//echo("nast�pi�a kurwa pr�ba zapisu");
+
 		if($this->databaseManager->updateSpecial($contact))
 		{
 			$this->pageData = $this->databaseManager->getSpecialById(2);
@@ -126,10 +126,6 @@ class AdminModel extends BaseModel
 		return false;
 	}
 	
-	#public function saveContact()
-	#{
-	#	$this->pageData = $this->databaseManager->updateSpecial(2);
-	#}
 	
 	//--------------DELETE
 	public function deleteMenuCategory($id)

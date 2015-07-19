@@ -19,7 +19,8 @@
         	 theme: "modern",
         	 width: '100%',
         	 height: '50%',
-        	    plugins: [
+        	 plugins: [
+					 "autoresize",
         	         "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
         	         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
         	         "save table contextmenu directionality emoticons template paste textcolor"
@@ -62,7 +63,6 @@
 				</ul>
 	  </div>
 	  	 <div id="right-center">
-	  	 <!--<div id="content-top"></div>-->
 	  	 	<div id="logout">
-				<button type="button" class="btn" style="width:100%; background: url(/static/images/frame.png);background-size: 100% 100%;background-repeat: no-repeat;" onClick="location.href='/admin?action=logout'">Wyloguj</button>
+				<button type="button" class="btn_admin" style="width:100%;position:relative" onClick="location.href='/admin?action=logout'">Wyloguj</button>
 			</div>

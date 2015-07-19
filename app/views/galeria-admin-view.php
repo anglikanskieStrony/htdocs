@@ -2,7 +2,7 @@
 	<script type="application/ecmascript">
 	function areUSure(id)
 	{
-		if(confirm("Czy na pewno chcesz usun¹c zdjêcie?"))
+		if(confirm("Czy na pewno chcesz usunÄ…c zdjÄ™cie?"))
 		{
 			location.href='/admin/galeria/index.php?id='+id+'&action=delete';
 		}
@@ -13,12 +13,12 @@
 
 			<?php foreach($this->getPageData() as $picture)
 			{
-				echo('<div><a onclick="areUSure('. $picture->getId().')"><img src="/static/gallery_images/'.$picture->getAddress().'" class="gallery-picture admin" title="Usuñ zdjêcie"></a></div>');
+				echo('<div><a onclick="areUSure('. $picture->getId().')"><img src="/static/gallery_images/'.$picture->getAddress().'" class="gallery-picture admin" title="Usuï¿½ zdjï¿½cie"></a></div>');
 			} ?>
 			<div style="background-color: #b40000; clear:both;">
 
 			<form method="post" enctype="multipart/form-data" action="/admin/galeria/index.php?action=add">
-				<h2>Dodaj nowe zdjêcie</h2>
+				<p>Dodaj nowe zdjÄ™cie</p>
 
 				Wybierz plik do dodania: <input type="file" size="20" name="filename">
 				<input type="submit" value="Dodaj" name="submit">

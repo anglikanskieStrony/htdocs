@@ -13,70 +13,70 @@
 @has-boxshadow:                  true;
 
 // Text colors
-@text:                           #ed0000;
-@text-inverse:                   #080101;
-@text-disabled:                  #302525;
+@text:                           #ff002e;
+@text-inverse:                   #c40000;
+@text-disabled:                  #ffffff;
 @text-shadow:                    0 1px 1px hsla(hue(@text-inverse), saturation(@text-inverse), lightness(@text-inverse), 0.75);
 @text-error:                     #aa0000;
 
 // Button
 @btn-text:                       #ffffff;
-@btn-text-shadow:                #7d1616;
-@btn-border-top:                 rgba(0,0,0,0.1);
-@btn-border-right:               rgba(0,0,0,0.1);
-@btn-border-bottom:              rgba(0,0,0,0.25);
-@btn-border-left:                rgba(0,0,0,0.25);
-@btn-split-border:               #bdbdbd;
+@btn-text-shadow:                #b30000;
+@btn-border-top:                 rgba(186,0,0,1);
+@btn-border-right:               rgba(32,42,51,1);
+@btn-border-bottom:              rgba(32,42,51,1);
+@btn-border-left:                rgba(32,42,51,1);
+@btn-split-border:               #ffffff;
 @btn-caret-border:               @btn-text;
 @btn-text-disabled:              @text-disabled;
 @btn-box-shadow:                 inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
 @btn-box-shadow-active:          inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
 @btn-box-disabled-opacity:       0.4;
-@btn-bg:                         #bd2e2e;
-@btn-bg-hlight:                  #d9d9d9;
+@btn-bg:                         #a80000;
+@btn-bg-hlight:                  #c20000;
 @btn-bg-hover:                   darken(@btn-bg, 5%);
 @btn-bg-hlight-hover:            darken(@btn-bg-hlight, 5%);
 
-@btn-primary-bg:                 #cc009f;
-@btn-primary-bg-hlight:          #cc0000;
+@btn-primary-bg:                 #ffffff;
+@btn-primary-bg-hlight:          #ffc4c4;
 @btn-primary-bg-hover:           darken(@btn-primary-bg, 5%);
 @btn-primary-bg-hover-hlight:    darken(@btn-primary-bg-hlight, 5%);
-@btn-primary-text:               #ffffff;
-@btn-primary-text-shadow:        #000000;
+@btn-primary-text:               #ff0000;
+@btn-primary-text-shadow:        #333333;
 @btn-primary-border-top:         mix(@btn-border-top, @btn-primary-bg, 50%);
 @btn-primary-border-right:       mix(@btn-border-right, @btn-primary-bg, 50%);
 @btn-primary-border-bottom:      mix(@btn-border-bottom, @btn-primary-bg, 50%);
 @btn-primary-border-left:        mix(@btn-border-left, @btn-primary-bg, 50%);
 
 // Menu
-@menuitem-text:                  #cccccc;
-@menu-bg:                        #ba1616;
-@menu-border:                    rgba(0,0,0,0.2);
+@menuitem-text:                  #000000;
+@menu-bg:                        #c90000;
+@menu-border:                    rgba(255,255,255,1);
 @menubar-border:                 mix(@panel-border, @panel-bg, 60%);
 @menuitem-text-inverse:          #ffffff;
 @menubar-bg-active:              darken(@btn-bg, 10%);
 @menuitem-bg-hover:              #0081C2;
 @menuitem-bg-selected:           #ffffff;
-@menuitem-bg-selected-hlight:    #a11313;
+@menuitem-bg-selected-hlight:    #fa0f0f;
 @menuitem-bg-disabled:           #CCC;
 @menuitem-caret:                 @menuitem-text;
 @menuitem-caret-selected:        @menuitem-text-inverse;
-@menuitem-separator-top:         #cbcbcb;
-@menuitem-separator-bottom:      #ffffff;
-@menuitem-bg-active:             #c8def4;
-@menuitem-text-active:           #333333;
-@menuitem-preview-border-active: #aaaaaa;
+@menuitem-separator-top:         #25313f;
+@menuitem-separator-bottom:      #424f5f;
+@menuitem-bg-active:             #0085c7;
+@menuitem-text-active:           #ffffff;
+@menuitem-preview-border-active: #08608c;
 
 // Panel
-@panel-border:                   #ffffff;
-@panel-bg:                       #963131;
-@panel-bg-hlight:                #572828;
+@panel-border:                   #b3000b;
+@panel-bg:                       #450f0f;
+@panel-bg-hlight:                #bd0000;
 
 // Tabs
-@tab-border:                     #c5c5c5;
-@tab-bg:                         #853c3c;
-@tab-bg-hover:                   #d14848;
-@tab-bg-active:                  #361919;
+@tab-border:                     #f5f5f5;
+@tab-bg:                         #ffffff;
+@tab-bg-hover:                   #8a2020;
+@tab-bg-active:                  #bd8f8f;
 
 // Tooltip
 @tooltip-bg:                     #000;
@@ -84,7 +84,7 @@
 @tooltip-font-size:              11px;
 
 // Window
-@window-border:                  #c4c4c4;
+@window-border:                  #fc0000;
 @window-head-border:             @window-border;
 @window-head-close:              mix(@text, @window-bg, 60%);
 @window-head-close-hover:        mix(@text, @window-bg, 40%);
@@ -94,7 +94,7 @@
 @window-modalblock-bg:           #000;
 @window-modalblock-opacity:      0.3;
 @window-box-shadow:              0 3px 7px rgba(0, 0, 0, 0.3);
-@window-bg:                      #c75555;
+@window-bg:                      #ffffff;
 @window-title-font-size:         20px;
 
 // Popover
@@ -111,8 +111,8 @@
 @checkbox-bg:                    @btn-bg;
 @checkbox-bg-hlight:             @btn-bg-hlight;
 @checkbox-box-shadow:            inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
-@checkbox-border:                #c5c5c5;
-@checkbox-border-focus:          #59a5e1;
+@checkbox-border:                #750209;
+@checkbox-border-focus:          #000000;
 
 // Path
 @path-text:                      @text;
@@ -122,9 +122,9 @@
 // Textbox
 @textbox-text-placeholder:       #aaa;
 @textbox-box-shadow:             inset 0 1px 1px rgba(0, 0, 0, 0.075);
-@textbox-bg:                     #edd0d0;
-@textbox-border:                 #c5c5c5;
-@textbox-border-focus:           #59a5e1;
+@textbox-bg:                     #515c67;
+@textbox-border:                 #202a33;
+@textbox-border-focus:           #1e7dad;
 
 // Throbber
 @throbber-bg:                    #fff url('img/loader.gif') no-repeat center center;
@@ -139,9 +139,9 @@
 
 // Grid
 @grid-bg-active:                 @menuitem-bg-active;
-@grid-border-active:             #9c9090;
+@grid-border-active:             #d6d6d6;
 @grid-border:                    #d6d6d6;
 
 // Misc
-@colorbtn-backcolor-bg:          #782020;
+@colorbtn-backcolor-bg:          #384552;
 @iframe-border:                  @panel-border;

@@ -14,7 +14,9 @@ html {
 	{
 	opacity: 0.2;
 	}
-	
+	/*div{
+	border:1px solid white;
+	}*/
 body{
 		width:100%;
 		height:100%;
@@ -38,10 +40,12 @@ body{
 	} 
 
 p{
-		text-align:justify;
+		text-align:center;
 		color: #F0F0F0 ; 
 		font-weight: bold;
-		font-size:1.6em;
+		font-size:1.6vmax;
+		font-family: 'Shojumaru', sans-serif;
+		margin:0.5em;
 	}
 
 ul, ul li {
@@ -69,6 +73,37 @@ ul a:link, ul a:visited {
 
 ul a:hover {
 		color: #3B0B0B;
+	}
+	
+.text_box{
+		width:40%;
+		height:5%;
+		line-height:10%;
+		padding:2%;
+		padding-left:1%;
+		margin:1%;
+		margin-left:30%;
+		margin-right:30%;
+		color:#999;
+		border:1px solid #dcdcdc;
+		-webkit-border-radius:30px;
+		-moz-border-radius:30px;
+		border-radius:30px;
+		font-family:Helvetica,Arial;
+		font-size:16px;
+		transition:all .5s;
+	}
+
+.text_box:focus{
+		box-shadow:1px 1px 7px #dcdcdc;
+		-moz-box-shadow:2px 2px 4px #dcdcdc;
+	}
+
+	#map{
+	float:left;
+	border: 4px solid #f0ede5;
+	border-radius: 10px; width: 40%; overflow: hidden;
+	margin: 4%;
 	}
 
 #main{
@@ -121,14 +156,13 @@ ul a:hover {
 
 #content{
 		width:100%;
-		min-height: 70%;
+		min-height: 73%;
 		padding: 0;
 		margin-top: 20%;
 		margin-bottom: 10%;
 		margin-right:6%;
-		/*background: #cc0000; Old browsers */
-		background: rgb(144,0,0) ; /* Fallback */
-    background: rgba(144, 0, 0, 0.8);
+		background: rgb(144,0,0);
+		background: rgba(144, 0, 0, 0.8);
 		-webkit-border-radius: 28;
 		-moz-border-radius: 28;
 		border-radius: 10%;
@@ -165,9 +199,9 @@ ul a:hover {
 
 .btn {
 		float:left;
-		-webkit-border-radius: 3;
-		-moz-border-radius: 3;
-		border-radius: 2px;
+		 -webkit-border-radius: 28;
+		 -moz-border-radius: 28;
+		border-radius: 45%;
 		border:none;
 		text-shadow: 4px 2px 3px black;
 		font-family: 'Shojumaru', sans-serif;
@@ -186,6 +220,34 @@ ul a:hover {
 		text-decoration: none;
 	}
 
+.btn_admin {
+  position: fixed;
+		float:left;
+		-webkit-border-bottom-right-radius: 15px;
+		-webkit-border-bottom-left-radius: 15px;
+		-moz-border-radius-bottomright: 15px;
+		-moz-border-radius-bottomleft: 15px;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border:none;
+		text-shadow: 4px 2px 3px black;
+		font-family: 'Shojumaru', sans-serif;
+		font-size: 130%;
+		color: #FFFF00;
+		padding: 9px 20px 10px 20px;
+		text-decoration: none;
+		width:20%;
+		height:2.5cm;
+		background: rgb(144,0,0);
+		background: rgba(144, 0, 0, 0.8);
+		top:0%;
+	}
+
+.btn_admin:hover {
+		background: #B80000;
+		opacity:0.8;
+		text-decoration: none;
+	}
 
 
 
