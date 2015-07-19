@@ -118,47 +118,21 @@ ul a:hover {
 	height:10%;
 }
 
-  
-#content-top
-{
-	margin:0;
-	padding: 0;
-	width: 80%;
-	height: 10%;
-	padding-left: 12%;
-	padding-right: 12%;
-	background: url(/static/images/frametop.png);
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color:blue;	
-}
 
 #content{
-		width:80%;
-		min-height: 80%;
-		margin:0;
+		width:100%;
+		min-height: 70%;
 		padding: 0;
-		padding-top:15%;
-		padding-bottom:5%;
-		background: url(/static/images/frame.png);
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		padding: 12%;
+		margin-top: 20%;
+		margin-bottom: 10%;
+		margin-right:6%;
+		/*background: #cc0000; Old browsers */
+		background: rgb(144,0,0) ; /* Fallback */
+    background: rgba(144, 0, 0, 0.8);
+		-webkit-border-radius: 28;
+		-moz-border-radius: 28;
+		border-radius: 10%;
 }	
-#content-bottom{
-
-	width: 80%;
-	height: 10%;
-	padding-left: 12%;
-	padding-right: 12%;
-	background: url(/static/images/framebottom.png);
-		margin-top: 0px;
-				background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-}
 
 #content::-webkit-scrollbar{
 		background-color: transparent;
