@@ -16,7 +16,11 @@
  
  
  <body>
-
+<div style="position:fixed;top:0%;right:0%;font-size:0.8vmax" >
+	Photo credit: <a href="https://www.flickr.com/photos/73542590@N00/5311574561/" style="color:black">Jeremy Weate</a>
+	 / <a href="http://foter.com/" style="color:black">Foter</a>
+	 / <a href="http://creativecommons.org/licenses/by/2.0/" style="color:black">CC BY</a>
+</div>
 
 <div id="main">
 

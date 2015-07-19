@@ -3,20 +3,31 @@ html {
 		height: 100%; 
 	}
 	
+a { text-decoration: none ;
+	color:black;
+	font-size:0.7vmax
+}
+a:link {
+    text-decoration: none ;
+	color:black;
+	font-size:0.7vmax
+}
+	
 	.gallery-picture
 	{
-	max-width: 250px;
-	max-height: 250px;
+	width:15.8%;
+	height: 10vmax;
 	float:left;
-	margin: 3px;
+	margin: 0.4%;
+			-webkit-border-radius:30px;
+		-moz-border-radius:30px;
+		border-radius:30%;
 	}
 .gallery-picture.admin:hover
 	{
-	opacity: 0.2;
+	opacity: 0.4;
 	}
-	div{
-	/*border:1px solid white;*/
-	}
+
 body{
 		width:100%;
 		height:100%;
@@ -89,7 +100,7 @@ ul a:hover {
 		-webkit-border-radius:30px;
 		-moz-border-radius:30px;
 		border-radius:30px;
-		font-family:Helvetica,Arial;
+		font-family: 'Shojumaru';
 		font-size:1.6vmax;
 		transition:all .5s;
 	}
@@ -98,6 +109,11 @@ ul a:hover {
 		box-shadow:1px 1px 7px #dcdcdc;
 		-moz-box-shadow:2px 2px 4px #dcdcdc;
 	}
+
+::-webkit-input-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans-serif;}
+::-moz-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans-serif;} /* firefox 19+ */
+:-ms-input-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans-serif;} /* ie */
+input:-moz-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans-serif;}
 
 	#map{
 	float:left;
@@ -234,16 +250,16 @@ ul a:hover {
 		padding: 1vmax 2vmax 1vmax 2vmax;
 		text-decoration: none;
 		width:17%;
-		height:2.5cm;
+		height:6.7vmax;
 		background: rgb(144,0,0);
 		background: rgba(144, 0, 0, 0.8);
 		top:0%;
 	}
 
 .btn_admin:hover {
-		background: #000000;
-		opacity:0.8;
+		opacity:1;
 		text-decoration: none;
+		color: #FF0000;
 	}
 	
 	::-webkit-scrollbar {
@@ -271,7 +287,22 @@ ul a:hover {
     background:#fff000;
 }           
 
-
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
 
 
 
