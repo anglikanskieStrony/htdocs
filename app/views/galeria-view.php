@@ -1,5 +1,5 @@
 <?php include($_SERVER['DOCUMENT_ROOT']."/app/views/header-view.php"); ?>
-		<div id="content">
+		<div id="content" style="border-radius: 3vmax;">
 			<div class="popup-gallery">
 			<?php foreach($this->getPageData() as $picture)
 			{

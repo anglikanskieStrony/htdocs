@@ -80,11 +80,12 @@ ul a:link, ul a:visited {
 		font-family: 'Shojumaru', sans-serif;
 		font-weight: bold;
 		font-size:1.3vmax;
-		color: #FFFF00;
+		text-shadow: 1px 1px #7b0808;
+		color: #FFFF00; /*#ffff3c;;#e6c13d;/*9ad097*/
 	}
 
 ul a:hover {
-		color: #3B0B0B;
+		color: #477744;
 	}
 	
 .text_box{
@@ -120,9 +121,9 @@ input:-moz-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans
 	float:left;
 	border: 0.4vmax solid #f0ede5;
 	border-radius: 10px; width: 40%; overflow: hidden;
-	margin: 2%;
-	width:35%;
-	height:auto;
+	margin: 3%;
+	width:43%;
+	height:15vmax;
 	}
 
 #main{
@@ -175,16 +176,18 @@ input:-moz-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans
 
 #content{
 		width:100%;
-		min-height: 73%;
+		min-height: 80%;
 		padding: 0;
-		margin-top: 20%;
-		margin-bottom: 7%;
+		margin-top: 11.5%;
+		margin-bottom: 1%;
 		margin-right:6%;
-		background: rgb(144,0,0);
-		background: rgba(144, 0, 0, 0.8);
+		background: rgb(146, 32, 27);
+		background: rgba(146, 32, 27, 0.8);
+		background-image: url(/static/images/content.png);
 		-webkit-border-radius: 28;
 		-moz-border-radius: 28;
-		border-radius: 10%;
+		border-radius: 6vmax;
+		overflow-y:hidden;
 }	
 
 #content::-webkit-scrollbar{
@@ -201,11 +204,11 @@ input:-moz-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans
 	}
 
 #line{
-		padding-top:1%;
-		padding-bottom:1%;
-		padding-left:15%;
-		padding-right:15%;
-		width:70%;
+		padding-top:2%;
+		padding-bottom:2%;
+		padding-left:25%;
+		padding-right:25%;
+		width:50%;
 	}
 
 #table{
@@ -231,8 +234,7 @@ input:-moz-placeholder { color:FFC6C6; padding:2%;font-family: 'Shojumaru', sans
 	}
 
 .btn:hover {
-		color: #FF0000;
-		opacity:0.8;
+		color: #477744;
 		text-decoration: none;
 	}
 
