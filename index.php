@@ -116,6 +116,27 @@
 				</div>
 			</section>
 			
+			</section>
+				<section id="slide-5" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 40%;" 
+					data-top-bottom="background-position: 50% 40%;" 
+					data-bottom-top="background-position: 50% 10%;" 
+					data-anchor-target="#slide-5"
+				>
+			    	<div class="hsContainer">
+			    		<div class="hsContent" 
+			    			data-center="opacity: 1" 
+			    			data-center-top="opacity: 0" 
+			    			data--100-bottom="opacity: 1;" 
+			    			data-anchor-target="#slide-5"
+			    		>
+				    	<h2>Kurwa Mac_4</h2>
+			    		</div>
+			    	</div>
+				</div>
+			</section>
+			
 		    <!-- 
 			<section id="slide-3" class="homeSlide">
 				<div class="bcg" 

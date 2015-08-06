@@ -391,6 +391,23 @@ main {
 	background:none;
 }
 
+#slide-5 .bcg {
+	background-image:url('/static/images/bcg_slide-1.pngd');
+	background-size:40%;
+	background-position: 30% 20%;	
+	background-color: red;
+	z-index: 3;
+}
+#slide-5 .hsContent {
+	margin-left: 10%;
+	top: auto;
+}
+#slide-5 h2 {
+	position: fixed;
+	top: 50%;
+	color:blue;
+	background:none;
+}
 
 /* Slide 3 
 #slide-5 .bcg {
