@@ -10,10 +10,11 @@
   	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css' />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="icon" href="/static/images/kleks.png" type="image/png" />
+	<script src="/static/scripts/parallax/vendor/modernizr-2.7.1.min.js"></script>
 	<title>whatever</title>
 </head>
 
-<body>
+<body class="loading">
 
 <header>
 		<div class="header">
@@ -34,48 +35,93 @@
 		</div>
 </header>
 
-	<div  style="position:fixed; background-image: url(/static/images/kleks.png);background-position: 50% 20%;background-size: 40%; background-repeat: no-repeat; height: 900px; width: 100%; z-index: -1;">
-	<div id="text1" class="text1">Kurwa mac</div>
-	<div id="text2"  class="text1">Kurwa mac</div>
-	<div id="text3"  class="text1">Kurwa mac</div>
-	<div id="text4"  class="text1">Kurwa mac</div>
+
+<div id="preload">
+	<img src="/static/images/bcg_slide-1.png" />
+	<img src="/static/images/bcg_slide-2.jpg" />
+	<img src="/static/images/bcg_slide-3.jpg" />
+	<img src="/static/images/bcg_slide-4.jpg" />
+</div>
+
+<main>
 	
+	 <section id="slide-1" class="homeSlide">
+	        	<div class="bcg" 
+	        		data-center="background-position: 50% 0px;" 
+	        		data-top-bottom="background-position: 50% -100px;" 
+	        		data-anchor-target="#slide-1">
+		        	<div class="hsContainer">
+			    		<div class="hsContent" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#slide-1 h2">
+				    		<h2>Kurwa Mac_1</h2>
+			    		</div>
+		        	</div>
+	        	</div>
+	</section>
 	
-	</div>
-	
-	<div style="height: 3000px;background-color: rgba(0, 0, 0, 0.0);">
-	
-	
-	</div>
-	
-	<section class="bgnd bgnd-2 js-parallax-bg">
-				<div class="container text-center">
-					<p>Pierwsza sekcja</p>
+	<section id="slide-0" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 10px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-bottom-top="background-position: 50% 100px;" 
+					data-anchor-target="#slide-0"
+				>
+			    	<div class="hsContainer">
+			    		<div class="hsContent" 
+			    			data-center="opacity: 1" 
+			    			data-center-top="opacity: 0" 
+			    			data--100-bottom="opacity: 0;" 
+			    			data-anchor-target="#slide-0"
+			    		>
+				    		<h2>Kurwa Mac_2</h2>
+			    		</div>
+			    	</div>
 				</div>
-	</section>
-	
-	<section class="bgnd bgnd-1 js-parallax-bg">
-				<div class="container text-center">
-					<p>Druga sekcja</p>
-				</div>
-	</section>
-	
-	<section class="bgnd bgnd-2 js-parallax-bg">
-				<div class="container text-center">
-					<p>Trzecia sekcja</p>
-				</div>
-	</section>
-	
-	<section class="bgnd bgnd-1 js-parallax-bg">
-				<div class="container text-center">
-					<p>Czwarta sekcja</p>
-				</div>
-	</section>
-	
-	<section class="content">
-		<div class="container">
-		<p>Treść_2</p>
-	</section>
+			</section>
+		    
+			<section id="slide-3" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 0px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-bottom-top="background-position: 50% 100px;" 
+					data-anchor-target="#slide-3"
+				>
+			    	<div class="hsContainer">
+						<div class="hsContent" 
+							data--50-bottom="opacity: 0;" 
+							data--200-bottom="opacity: 1;" 
+							data-center="opacity: 1" 
+							data-200-top="opacity: 0" 
+							data-anchor-target="#slide-3 h2"
+						>
+				    		<h2>Kurwa Mac_3</h2>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+			
+			<section id="slide-4" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 0px;" 
+					data-top-bottom="background-position: 50% -100px;" 
+					data-bottom-top="background-position: 50% 100px;" 
+					data-anchor-target="#slide-4"
+				>
+			    	<div class="hsContainer">
+						<div class="hsContent" 
+							data-bottom-top="opacity: 0" 
+							data-25p-top="opacity: 0" 
+							data-top="opacity: 1"  
+							data-anchor-target="#slide-4"
+						>
+				    		<h2>Kurwa Mac_4</h2>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+
+</main>
 
 <footer>
 		<div class="footer">
@@ -83,30 +129,13 @@
 		</div>
 </footer>
 	
-
-	<script src="/static/scripts/gator/gator.min.js"></script>
-	<script src="/static/scripts/JS/parallax.js"></script>
-	<script>
-	//	ParallaxBG.init();
-	window.onscroll = function () {
-		alert(pageYOffset);
-		 var a = window.innerHeight;
-		if ( window.pageYOffset > a) {
-
-			alert(a/2);
-			
-			  window.scroll(0,0);
-			}
-		
-//window.scrollTo(0,0);
-
-
-
-
-}
-	</script> 
-</body>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/static/scripts/parallax/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="/static/scripts/parallax/imagesloaded.js"></script>
+        <script src="/static/scripts/parallax/skrollr.js"></script>
+        <script src="/static/scripts/parallax/_main.js"></script>
 
 </body>
+
 </html>
 
