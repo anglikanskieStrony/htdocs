@@ -1,8 +1,4 @@
 eclipse.preferences.version=1
-encoding//app/views/galeria-admin-view.php=UTF-8
-encoding//app/views/header-admin-view.php=UTF-8
-encoding//app/views/kategoria-admin-view.php=UTF-8
-encoding//app/views/kontakt-admin-view.php=UTF-8
-encoding//app/views/login-admin-view.php=UTF-8
-encoding//app/views/login-failed-admin-view.php=UTF-8
-encoding//app/views/uzytkownik-admin-view.php=UTF-8
+encoding//static/scripts/JS/parallax.js=UTF-8
+encoding//static/style/style.css=UTF-8
+encoding/index.php=UTF-8
