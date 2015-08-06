@@ -264,6 +264,7 @@ footer{
 }
 h2 {
 	margin-top: 0;
+	color: blue;
 }
 .loading {
 	background: url('/static/images/ico_loading.gif') no-repeat center center;
@@ -330,23 +331,11 @@ main {
 	}
 
 
-/* Slide 0 */
-#slide-0 .bcg {
-	background-image:url('/static/images/bcg_slide-0.png');
-	background-size:100%;
-	background-color:red;
-}
-#slide-0 .hsContent {
-	bottom: 200px;
-	top: auto;
-}
-
-
 /* Slide 1 */
 #slide-1 .bcg {
 	background-image:url('/static/images/bcg_slide-1.png');
-	background-size:40%;	
-	background-color:blue;
+	background-size:40%;
+	background-position: 30% 20%;	
 }
 #slide-1 .hsContent {
 	bottom: 200px;
@@ -357,31 +346,66 @@ main {
 #slide-2 .bcg {
 	background-image:url('/static/images/bcg_slide-1.png');
 	background-size:40%;
-	background-color:green;
+	background-position: 30% 20%;
 }
 #slide-2 .hsContent {
-	margin-left: -450px;
+	margin-left: -20%;
 	top: auto;
 }
 #slide-2 h2 {
 	position: fixed;
-	top: 70%;
+	top: 40%;
+	color:blue;
+	background:none;
 }
 
-/* Slide 3 */
 #slide-3 .bcg {
-	background-image:url('/static/images/bcg_slide-3.jpg');
-	background-color:pink;
+	background-image:url('/static/images/bcg_slide-1.png');
+	background-size:40%;
+	background-position: 30% 20%;	
 }
 #slide-3 .hsContent {
+	margin-left: -10%;
+	top: auto;
+}
+#slide-3 h2 {
+	position: fixed;
+	top: 20%;
+	color:blue;
+	background:none;
+}
+
+#slide-4 .bcg {
+	background-image:url('/static/images/bcg_slide-1.png');
+	background-size:40%;
+	background-position: 30% 20%;	
+}
+#slide-4 .hsContent {
+	margin-left: 10%;
+	top: auto;
+}
+#slide-4 h2 {
+	position: fixed;
+	top: 50%;
+	color:blue;
+	background:none;
+}
+
+
+/* Slide 3 
+#slide-5 .bcg {
+	background-image:url('/static/images/bcg_slide-1.png');
+	background-color:pink;
+}
+#slide-5 .hsContent {
 	margin-left: -239px;
 }
-	#slide-3 h2 {
+	#slide-5 h2 {
 		color: #f2ead6;
 		background-color: rgba(0,0,0,0.6);
 	}
 
-/* Slide 4 */
+ Slide 4 
 #slide-4 .bcg {
 	background-image:url('/static/images/bcg_slide-4.jpg');
 	background-color:yellow;
@@ -397,5 +421,5 @@ main {
 		padding-right: 0;
 	}
 
-	
+	*/
 	

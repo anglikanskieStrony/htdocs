@@ -44,40 +44,79 @@
 </div>
 
 <main>
-	
+	<!-- zmiana położenia to 2-gi  w data-top-bottom parametr np: -100px -->
 	 <section id="slide-1" class="homeSlide">
 	        	<div class="bcg" 
-	        		data-center="background-position: 50% 0px;" 
-	        		data-top-bottom="background-position: 50% -100px;" 
+	        		data-center="background-position: 50% 40%;" 
+	        		data-top-bottom="background-position: 50% 40%;" 
 	        		data-anchor-target="#slide-1">
 		        	<div class="hsContainer">
-			    		<div class="hsContent" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#slide-1 h2">
+			    	<!-- 	<div class="hsContent" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#slide-1 h2">
 				    		<h2>Kurwa Mac_1</h2>
-			    		</div>
+			    		</div> -->
 		        	</div>
 	        	</div>
 	</section>
 	
-	<section id="slide-0" class="homeSlide">
+	<section id="slide-2" class="homeSlide">
 				<div class="bcg" 
-					data-center="background-position: 50% 10px;" 
-					data-top-bottom="background-position: 50% -100px;" 
-					data-bottom-top="background-position: 50% 100px;" 
-					data-anchor-target="#slide-0"
+					data-center="background-position: 50% 40%;" 
+					data-top-bottom="background-position: 50% 40%;" 
+					data-anchor-target="#slide-2"
 				>
 			    	<div class="hsContainer">
 			    		<div class="hsContent" 
 			    			data-center="opacity: 1" 
 			    			data-center-top="opacity: 0" 
-			    			data--100-bottom="opacity: 0;" 
-			    			data-anchor-target="#slide-0"
+			    			data--100-bottom="opacity: 1;" 
+			    			data-anchor-target="#slide-2"
 			    		>
-				    		<h2>Kurwa Mac_2</h2>
+				    	<h2>Kurwa Mac_1</h2>
+			    		</div>
+			    	</div>
+				</div>
+				
+			</section>
+				<section id="slide-3" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 40%;" 
+					data-top-bottom="background-position: 50% 40%;" 
+					data-anchor-target="#slide-3"
+				>
+			    	<div class="hsContainer">
+			    		<div class="hsContent" 
+			    			data-center="opacity: 1" 
+			    			data-center-top="opacity: 0" 
+			    			data--100-bottom="opacity: 1;" 
+			    			data-anchor-target="#slide-3"
+			    		>
+				    	<h2>Kurwa Mac_2</h2>
 			    		</div>
 			    	</div>
 				</div>
 			</section>
-		    
+			
+			</section>
+				<section id="slide-4" class="homeSlide">
+				<div class="bcg" 
+					data-center="background-position: 50% 40%;" 
+					data-top-bottom="background-position: 50% 40%;" 
+					data-anchor-target="#slide-4"
+				>
+			    	<div class="hsContainer">
+			    		<div class="hsContent" 
+			    			data-center="opacity: 1" 
+			    			data-center-top="opacity: 0" 
+			    			data--100-bottom="opacity: 1;" 
+			    			data-anchor-target="#slide-4"
+			    		>
+				    	<h2>Kurwa Mac_3</h2>
+			    		</div>
+			    	</div>
+				</div>
+			</section>
+			
+		    <!-- 
 			<section id="slide-3" class="homeSlide">
 				<div class="bcg" 
 					data-center="background-position: 50% 0px;" 
@@ -120,6 +159,7 @@
 			    	
 			    </div>
 			</section>
+			 -->
 
 </main>
 
