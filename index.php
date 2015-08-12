@@ -5,12 +5,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  	<link rel="stylesheet" href="/static/style/style.css" />
+  	<link rel="stylesheet" href="static/style/style.css" />
   	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css' />
   	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="icon" href="/static/images/kleks.png" type="image/png" />
-	<script src="/static/scripts/parallax/vendor/modernizr-2.7.1.min.js"></script>
+	<link rel="icon" href="static/images/kleks.png" type="image/png" />
+	<script src="static/scripts/parallax/vendor/modernizr-2.7.1.min.js"></script>
 	<title>whatever</title>
 </head>
 
@@ -18,7 +20,7 @@
 
 <header>
 		<div class="header">
-			<img class="logo" src="/static/images/logo.png"/>
+			<img class="logo" src="static/images/logo.png"/>
 			<ul id="menu-bar">
 			 <li><a href="#">Contact Us</a></li>
 			 <li><a href="#">About</a></li>
@@ -37,10 +39,10 @@
 
 
 <div id="preload">
-	<img src="/static/images/bcg_slide-1.png" />
-	<img src="/static/images/bcg_slide-2.jpg" />
-	<img src="/static/images/bcg_slide-3.jpg" />
-	<img src="/static/images/bcg_slide-4.jpg" />
+	<img src="static/images/bcg_slide-1.png" />
+	<img src="static/images/bcg_slide-2.jpg" />
+	<img src="static/images/bcg_slide-3.jpg" />
+	<img src="static/images/bcg_slide-4.jpg" />
 </div>
 
 <main>
@@ -71,7 +73,7 @@
 			    			data--100-bottom="opacity: 1;" 
 			    			data-anchor-target="#slide-2"
 			    		>
-				    	<h2>Kurwa Mac_1</h2>
+				    	<h2 class="blot">Kurwa Mac_1</h2>
 			    		</div>
 			    	</div>
 				</div>
@@ -90,7 +92,7 @@
 			    			data--100-bottom="opacity: 1;" 
 			    			data-anchor-target="#slide-3"
 			    		>
-				    	<h2>Kurwa Mac_2</h2>
+				    	<h2 class="blot">Kurwa Mac_2</h2>
 			    		</div>
 			    	</div>
 				</div>
@@ -110,7 +112,7 @@
 			    			data--100-bottom="opacity: 1;" 
 			    			data-anchor-target="#slide-4"
 			    		>
-				    	<h2>Kurwa Mac_3</h2>
+				    	<h2 class="blot">Kurwa Mac_3</h2>
 			    		</div>
 			    	</div>
 				</div>
@@ -131,11 +133,41 @@
 			    			data--100-bottom="opacity: 1;" 
 			    			data-anchor-target="#slide-5"
 			    		>
-				    	<h2>Kurwa Mac_4</h2>
 			    		</div>
 			    	</div>
 				</div>
 			</section>
+	</section>
+	<section id="slide-6" class="homeSlide">
+		<div class="bcg"
+			 data-center="background-position: 50% 40%;"
+			 data-top-bottom="background-position: 50% 40%;"
+			 data-bottom-top="background-position: 50% 10%;"
+			 data-anchor-target="#slide-5"
+			>
+			<div class="hsContainer">
+				<div class="slide-6-column">
+					<h2>Kurwa mac</h2>
+					<p>
+						Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+					</p>
+				</div>
+				<div class="slide-6-column">
+					<h2>Kurwa mac</h2>
+					<p>
+						Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+					</p>
+				</div>
+
+				<div class="slide-6-column">
+					<h2>Kurwa mac</h2>
+					<p>
+						Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 			
 		    <!-- 
 			<section id="slide-3" class="homeSlide">
@@ -190,13 +222,13 @@
 		</div>
 </footer>
 	
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/static/scripts/parallax/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="/static/scripts/parallax/imagesloaded.js"></script>
-        <script src="/static/scripts/parallax/skrollr.js"></script>
-        <script src="/static/scripts/parallax/_main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="static/scripts/parallax/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="static/scripts/parallax/imagesloaded.js"></script>
+        <script src="static/scripts/parallax/skrollr.js"></script>
+        <script src="static/scripts/parallax/_main.js"></script>
 
 </body>
 
-</html>
+</html>v
 
