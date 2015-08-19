@@ -409,14 +409,37 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {
-    background-image: url('/HomeSite/static/images/bcg_slide-1.png');
-    background-size: 40%;
-    background-position: 30% 20%;
+    background-image: url('/HomeSite/static/images/future.jpg');
 }
 
 #slide-1 .hsContent {
     bottom: 200px;
     top: auto;
+    font-family: "source sans pro";
+
+}
+
+#you-can {
+    font-size: 80pt;
+    text-align:center;
+    color: #ff0000;
+    position:fixed;
+    left: 5%;
+    top: 10%;
+}#more {
+     font-size: 160pt;
+     text-align:center;
+     color: #ff0000;
+     position:fixed;
+     left: 30%;
+     top: 15%;
+ }
+#slide-1 p {
+    font-size: 40pt;
+    color: #ffffff;
+}
+#bigger {
+    font-size: 110pt;
 }
 
 /* Slide 2 */
