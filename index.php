@@ -52,10 +52,10 @@
              data-center="background-position: 50% 40%;"
              data-top-bottom="background-position: 50% 40%;"
              data-anchor-target="#slide-1">
-            <div class="hsContainer">
+           <!-- <div class="hsContainer">
                <h1 id="you-can">Fast and safty we'll help take your company to </h1><h1 id="more">the next level</h1>
                 <p>By not being afraid of innovations you can take your company to the next level. We will help you with this. Motherfucker!  </p>
-            </div>
+            </div> -->
         </div>
     </section>
     <section id="slide-5" class="homeSlide">
